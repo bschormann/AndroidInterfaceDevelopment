@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >    
+
+		<ImageView
+	        android:id="@+id/imageView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="5dip"
+	        android:src="@drawable/logo_nologo" />
+		
+		<EditText
+			android:id="@+id/loginEmail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignTop="@+id/imageView"
+	        android:layout_marginTop="100dip"
+	        android:textSize="22sp"
+			android:textStyle="bold"
+			android:background="@color/plum"
+	        android:hint="@string/hint_email"
+			android:textCursorDrawable="@drawable/cursor_red"
+			android:inputType="textEmailAddress" />
+	
+	    <EditText
+	        android:id="@+id/loginPassword"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_alignTop="@+id/loginEmail"
+	        android:layout_marginTop="50dip"
+	        android:textSize="22sp"
+			android:textStyle="bold"
+	        android:background="@color/plum"
+	        android:hint="@string/hint_password"
+			android:textCursorDrawable="@drawable/cursor_red"
+	        android:inputType="textPassword" />
+	    
+	    <ImageView
+	        android:id="@+id/buttonSignin"
+	        android:src="@drawable/signinbutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/loginPassword"
+	        android:layout_marginTop="25dp"
+	        android:minWidth="100dip" />
+	    
+	    <TextView
+	        android:id="@+id/textMessage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/buttonSignin"
+			android:textStyle="bold"
+	        android:textSize="22sp"
+	        android:layout_marginTop="50dip"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true" />
+	   
+	</RelativeLayout>
+	
+</ScrollView>

@@ -2,7 +2,9 @@
 <resources>
     <color name="errorColor">#ff0000</color>
 	<color name="plum">#ffbbff</color>
-    <color name="black">#000000</color>    
+	<color name="nofocus">#ffbbff</color>
+	<color name="black">#000000</color>    
     <color name="okColor">#000000</color>    
-    <color name="red">#ff0000</color>    
+    <color name="red">#ff0000</color>
+    <color name="focus">#CCFF99</color>    
 </resources>

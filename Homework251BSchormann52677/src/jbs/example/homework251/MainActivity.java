@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnFocusChangeListener;
 import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -15,7 +16,7 @@ import android.widget.TextView;
 /**
  * 
  * @author Brett Schormann
- * @version 1.0
+ * @version 1.1
  * 
  * Displays opening window.
  * Checks input from user.
@@ -59,16 +60,41 @@ public class MainActivity extends Activity {
 	    setContentView(R.layout.activity_main);
 				
 		buttonSignin = (ImageView)findViewById(R.id.buttonSignin);
-		loginEmail = (EditText)findViewById(R.id.loginEmail);
-		loginPassword = (EditText)findViewById(R.id.loginPassword);
-		textMessage = (TextView)findViewById(R.id.textMessage);
-				
 		buttonSignin.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v)  {
 				checkInputs();
 			}
 		});
+
+		loginEmail = (EditText)findViewById(R.id.loginEmail);
+		// detect focus and change background color
+		loginEmail.setOnFocusChangeListener(new OnFocusChangeListener() {
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+			    if(hasFocus){
+			    	loginEmail.setBackgroundColor(getResources().getColor(R.color.focus));
+			    } else {
+			    	loginEmail.setBackgroundColor(getResources().getColor(R.color.nofocus));
+			    }
+			}
+		});
+		
+		loginPassword = (EditText)findViewById(R.id.loginPassword);
+		// detect focus and change background color
+		loginPassword.setOnFocusChangeListener(new OnFocusChangeListener() {
+			@Override
+			public void onFocusChange(View v, boolean hasFocus) {
+			    if(hasFocus){
+			    	loginPassword.setBackgroundColor(getResources().getColor(R.color.focus));
+			    } else {
+			    	loginPassword.setBackgroundColor(getResources().getColor(R.color.nofocus));
+			    }
+			}
+		});
+		
+		textMessage = (TextView)findViewById(R.id.textMessage);
+				
 	}
 	
 	/**

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="vertical"
+        android:useDefaultMargins="true" >
+
+    <TextView
+        android:id="@+id/tasks"
+        android:layout_column="0"
+        android:layout_row="0"
+        android:text="@string/tasks" />
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_column="1"
+        android:layout_row="0" />
+ 
+     <TextView
+        android:id="@+id/titleLabelTextView"
+        android:layout_column="0"
+        android:layout_row="1"
+        android:text="@string/label_task_title" 
+        style="@style/TaskLabelTextView" />   
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_column="1"
+        android:layout_row="1"
+        style="@style/TaskTextView" />
+
+   <TextView
+        android:id="@+id/startDateLabelTextView"
+        android:layout_column="0"
+        android:layout_row="2"
+        android:text="@string/label_start_date"
+        style="@style/TaskLabelTextView" />
+    <TextView
+        android:id="@+id/startDateTextView"
+        android:layout_column="1"
+        android:layout_row="2"
+        style="@style/TaskTextView" />
+ 
+    <TextView
+        android:id="@+id/descriptionLabelTextView"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:text="@string/label_task_description"
+        style="@style/TaskLabelTextView" />
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_column="1"
+        android:layout_row="3"
+        style="@style/TaskTextView" />    
+ 
+    <TextView
+        android:id="@+id/endDateLabelTextView"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:text="@string/label_end_date"
+        style="@style/TaskLabelTextView" />
+    <TextView
+        android:id="@+id/endDateTextView"
+        android:layout_column="1"
+        android:layout_row="4"
+        style="@style/TaskTextView" />
+    
+</GridLayout>
+
+</ScrollView>

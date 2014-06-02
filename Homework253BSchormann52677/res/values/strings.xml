@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Homework 253</string>
+    <string name="buttonStop">Stop</string>
+    <string name="buttonStart">Start</string>
+    <string name="explicit_notification">Use Explicit Notification</string>
+    <string name="implicit_notification">Use Implicit Notification</string>
+    
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttonLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/Start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/buttonStart" />
+
+    <Button 
+        android:id="@+id/explicitNotification"
+   		android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+   		android:text="@string/explicit_notification" />
+
+   <Button
+       android:id="@+id/implicitNotification"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:text="@string/implicit_notification" />    
+       
+     <TextView
+     android:id="@+id/counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+
+</LinearLayout>
